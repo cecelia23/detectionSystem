@@ -1,6 +1,12 @@
 <template>
   <div id="app">
-    <header><div class="title">Modbus IDS</div></header>
+    <header>
+      <div class="title">Modbus IDS</div>
+      <div class="username">
+        <span>{{user}}</span>
+        <span class="log" @click="quit">退出</span>
+      </div>
+    </header>
     <div class="container">
       <div class="side">
         <navi-menu @on-select-menu="naviChange"></navi-menu>
@@ -22,11 +28,19 @@ import NaviMenu from './components/NaviMenu.vue'
 
 export default {
   name: 'app',
+  data () {
+    return {
+      user: 'admin'
+    }
+  },
   components: {
     NaviMenu
   },
   methods: {
     naviChange () {
+      
+    },
+    quit () {
       
     }
   }
@@ -51,14 +65,27 @@ export default {
 header {
   height: 60px;
   background: #2C3E74;
+  color:white;
   flex: none;
 }
 .title {
-  color:white;
+  float: left;
   width: 200px;
   height: 100%;
   text-align: center;
   line-height: 60px;
+}
+.username {
+  float: right;
+  line-height: 60px;
+  margin: 0 20px;
+}
+.log {
+  color:chocolate; 
+  margin-left: 10px;
+}
+.log:hover {
+  background:greenyellow;
 }
 .container { 
   flex: 1;
