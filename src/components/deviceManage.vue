@@ -58,35 +58,36 @@
     <el-table
       :data="tableData"
       style="width: 100%">
+
+      <el-table-column
+        prop="id"
+        label="序号"
+        width="70">
+      </el-table-column>
       <el-table-column
         prop="type"
         label="类型"
-        width="80">
-      </el-table-column>
-      <el-table-column
-        prop="id"
-        label="id"
-        width="100">
+        width="180">
       </el-table-column>
       <el-table-column
         prop="ip"
         label="IP"
-        width="120">
+        width="220">
       </el-table-column>
        <el-table-column
         prop="port"
         label="端口号"
-        width="80">
+        width="180">
       </el-table-column>
       <el-table-column
         prop="master"
         label="master"
-        width="120">
+        width="220">
       </el-table-column>
       <el-table-column
         prop="createTime"
         label="创建时间"
-        width="180">
+        width="280">
       </el-table-column>
     </el-table>
     </div>
@@ -183,8 +184,8 @@ export default {
     margin: 20px;
 } 
 .device-table {
-    width: 70%;
-    margin:0 auto;
+    width: 75%;
+    margin:auto;
 }
 
 </style>

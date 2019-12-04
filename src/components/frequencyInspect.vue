@@ -58,31 +58,31 @@
         <div class="frequence-table">
             <el-table
             :data="frequenceData"
-            style="width: 800%">
+            style="width: 100%">
             <el-table-column
                 prop="id"
-                label="id"
-                width="100">
+                label="序号"
+                width="70">
             </el-table-column>
             <el-table-column
                 prop="srcIp"
                 label="srcIp"
-                width="80">
+                width="180">
             </el-table-column>
             <el-table-column
                 prop="srcPort"
                 label="srcPort"
-                width="70">
+                width="100">
             </el-table-column>
             <el-table-column
                 prop="dstIp"
                 label="dstIp"
-                width="80">
+                width="180">
             </el-table-column>
             <el-table-column
                 prop="dstPort"
                 label="dstPort"
-                width="70">
+                width="100">
             </el-table-column>
             <el-table-column
                 prop="timeWindowSize"
@@ -97,7 +97,7 @@
             <el-table-column
                 prop="packetTime"
                 label="packetTime"
-                width="100">
+                width="200">
             </el-table-column>
             </el-table>
         </div>
@@ -155,6 +155,7 @@ export default {
     margin: 20px 20px;
 }
 .frequence-table {
-    margin: 0 40px;
+    width: 70%;
+    margin: 0 auto;
 }
 </style>
