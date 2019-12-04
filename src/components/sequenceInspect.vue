@@ -61,33 +61,33 @@
             style="width: 800%">
             <el-table-column
                 prop="id"
-                label="id"
-                width="100">
+                label="序号"
+                width="70">
             </el-table-column>
             <el-table-column
                 prop="srcIp"
                 label="srcIp"
-                width="80">
+                width="150">
             </el-table-column>
             <el-table-column
                 prop="srcPort"
                 label="srcPort"
-                width="70">
+                width="100">
             </el-table-column>
             <el-table-column
                 prop="dstIp"
                 label="dstIp"
-                width="80">
+                width="150">
             </el-table-column>
             <el-table-column
                 prop="dstPort"
                 label="dstPort"
-                width="70">
+                width="100">
             </el-table-column>
             <el-table-column
                 prop="sequenceWindowSize"
                 label="sequenceWindowSize"
-                width="168">
+                width="180">
             </el-table-column>
             <el-table-column
                 prop="sequence"
@@ -97,12 +97,12 @@
             <el-table-column
                 prop="frameSequence"
                 label="frameSequence"
-                width="125">
+                width="150">
             </el-table-column>
             <el-table-column
                 prop="packetTime"
                 label="packetTime"
-                width="100">
+                width="120">
             </el-table-column>
             </el-table>
         </div>
@@ -160,6 +160,7 @@ export default {
     margin: 20px 20px;
 }
 .sequence-table {
-    margin: 0 20px;
+    width: 80%;
+    margin: 0 auto;
 }
 </style>
