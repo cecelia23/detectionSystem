@@ -54,35 +54,35 @@ const mutations = {
 
 const actions = {
     fetchDevice ({commit, state}) {
-        Vue.axios.post('/deviceInfo', state.params).then((res) => {
+        Vue.axios.post('/api/deviceInfo', state.params).then((res) => {
             commit('updateDevice', res.data)
         }, (err) => {
             console.error(err)
         })
     },
     addDevice({commit, state}) {
-        Vue.axios.post('/addDevice', state.params).then((res) => {
+        Vue.axios.post('/api/addDevice', state.params).then((res) => {
             commit('updateInfo', res.data)
         }, (err) => {
             console.error(err)
         })
     },
     fetchPackage ({commit, state}) {
-        Vue.axios.post('/updatePackage', state.params).then((res) => {
+        Vue.axios.post('/api/updatePackage', state.params).then((res) => {
             commit('updatePackage', res.data)
         }, (err) => {
             console.error(err)
         }) 
     },
     fetchSequence ({commit, state}) {
-        Vue.axios.post('/updateSequence', state.params).then((res) => {
+        Vue.axios.post('/api/updateSequence', state.params).then((res) => {
             commit('updateSequence', res.data)
         }, (err) => {
             console.log(err)
         })
     },
     fetchFrequence ({commit, state}) {
-        Vue.axios.post('/updateFrequence', state.params).then((res) => {
+        Vue.axios.post('/api/updateFrequence', state.params).then((res) => {
             commit('updateFrequence', res.data)
         }, (err) => {
             console.log(err)

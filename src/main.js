@@ -18,6 +18,8 @@ Vue.use(Vuex)
 Vue.use(VueAxios, axios)
 Vue.use(ElementUI)
 
+Vue.axios.baseUrl = 'http://localhost:3000'
+
 Vue.config.productionTip = false
 
 const router = new VueRouter({

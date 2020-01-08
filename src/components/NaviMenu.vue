@@ -6,9 +6,7 @@
       router
       background-color="#2C3E74"
       text-color="#fff"
-      @select="changeShow"
-      @open="handleOpen"
-      @close="handleClose">
+      @select="changeShow">
       <template v-for="(item,index) in $router.options.routes">
         <el-menu-item :index="item.path" :key="index">
             <i :class="item.styleType"></i>
