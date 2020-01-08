@@ -17,7 +17,7 @@
               <router-view></router-view>
             </keep-alive>
           </div>
-          <footer>508 Lab @Jack Paul</footer>
+          <footer>A TEST FOR @VUE/CLI + EXPRESS</footer>
       </main>
     </div>
   </div>
